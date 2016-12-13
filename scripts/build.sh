@@ -15,4 +15,5 @@ jarsigner \
 $UNSIGNED_APK_PATH \
 alias_name
 
-$ADT_DIR/sdk/tools/zipalign -v 4 $UNSIGNED_APK_PATH $SIGNED_APK_PATH
+rm $SIGNED_APK_PATH
+$ADT_DIR/sdk/build-tools/19.1.0/zipalign -v 4 $UNSIGNED_APK_PATH $SIGNED_APK_PATH
